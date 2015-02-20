@@ -1,0 +1,19 @@
+body { padding-top: 70px; }
+
+@-moz-document url-prefix() {
+  fieldset { display: table-cell; }
+}
+// Classes
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Usage as mixins
+.element {
+  .center-block();
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+	text-align: center;
+}
